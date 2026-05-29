@@ -85,3 +85,18 @@ document.querySelectorAll('.service-card__header').forEach(header => {
         }
     });
 });
+
+// Accordion de FAQ
+document.querySelectorAll('.faq-item__question').forEach(question => {
+    question.addEventListener('click', () => {
+        const item = question.closest('.faq-item');
+        const isOpen = item.classList.toggle('is-open');
+        question.setAttribute('aria-expanded', String(isOpen));
+    });
+    question.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            question.click();
+        }
+    });
+});
