@@ -401,7 +401,7 @@ ul {
 .hero__bg {
     position: absolute;
     inset: 0;
-    background-image: url('images/home.png');
+    background-image: url('images/hero2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1713,6 +1713,14 @@ ul {
 
     .hero__info-card-image {
         height: 260px;
+    }
+
+    .hero__bg {
+        background-image: url('images/celuhero.png');
+    }
+
+    .proceso {
+        background-image: url('images/fondocelu.png') !important;
     }
 }
 
