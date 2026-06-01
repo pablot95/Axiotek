@@ -410,7 +410,7 @@ ul {
 .hero__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(0, 52, 82, 0.874) 0%, rgba(10, 43, 62, 0.328) 100%);
+    background: linear-gradient(135deg, rgba(0, 52, 82, 0.574) 0%, rgba(10, 43, 62, 0.228) 100%);
 }
 
 .hero__container {
