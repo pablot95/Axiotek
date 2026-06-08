@@ -1637,6 +1637,11 @@ ul {
         grid-row: auto;
     }
 
+    .contacto__header  { order: 1; }
+    .contacto__form    { order: 2; }
+    .contacto__buttons { order: 3; }
+    .contacto__map     { order: 4; }
+
     .footer__grid {
         grid-template-columns: 1fr 1fr;
         gap: 2.5rem;
