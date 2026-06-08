@@ -182,7 +182,7 @@ ul {
 .section-header {
     text-align: center;
     max-width: 640px;
-    margin: 0 auto 4rem;
+    margin: 0 auto 2.5rem;
 }
 
 .section-header h2 {
@@ -260,7 +260,6 @@ ul {
     height: 70px;
     width: auto;
     object-fit: contain;
-    border-radius: 50%;
 }
 
 .nav__logo-text {
@@ -676,7 +675,7 @@ ul {
 /* SOLUCIONES PRINCIPALES */
 
 .soluciones {
-    padding: 7rem 0;
+    padding: 4.5rem 0;
     background: var(--white-soft);
 }
 
@@ -840,7 +839,7 @@ ul {
 /* COMPLEMENTARIOS */
 
 .complementarios {
-    padding: 7rem 0;
+    padding: 4.5rem 0;
     background: var(--navy);
     position: relative;
     overflow: hidden;
@@ -968,7 +967,7 @@ ul {
 /* PROCESO */
 
 .proceso {
-    padding: 7rem 0;
+    padding: 4.5rem 0;
     background-color: var(--white-soft);
     background-size: cover;
     background-position: center;
@@ -1058,7 +1057,7 @@ ul {
 /* DIFERENCIAL */
 
 .diferencial {
-    padding: 7rem 0;
+    padding: 4.5rem 0;
     background: linear-gradient(135deg, #0B2744 0%, var(--navy) 100%);
     position: relative;
     overflow: hidden;
@@ -1155,24 +1154,27 @@ ul {
 /* CONTACTO */
 
 .contacto {
-    padding: 7rem 0;
+    padding: 4.5rem 0;
     background: var(--white-soft);
 }
 
-.contacto__inner {
+.contacto__grid {
     display: grid;
-    grid-template-columns: 1fr 1.1fr;
-    gap: 5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem 3.5rem;
     align-items: start;
 }
 
-.contacto__info {
+.contacto__header {
+    grid-column: 1;
+    grid-row: 1;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
-.contacto__info h2 {
+.contacto__header h2 {
     font-family: var(--h);
     font-size: clamp(1.8rem, 3vw, 2.6rem);
     font-weight: 800;
@@ -1180,10 +1182,35 @@ ul {
     line-height: 1.2;
 }
 
-.contacto__info > p {
+.contacto__header > p {
     font-size: 1.05rem;
     color: var(--text-mid);
     line-height: 1.7;
+}
+
+.contacto__buttons {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contacto__map {
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    min-height: 350px;
+}
+
+.contacto__map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    display: block;
+    border: 0;
 }
 
 .contact-details {
@@ -1270,6 +1297,8 @@ ul {
 /* FORM */
 
 .contacto__form {
+    grid-column: 1;
+    grid-row: 2;
     background: var(--white);
     border-radius: var(--radius-lg);
     padding: 2.5rem;
@@ -1336,7 +1365,7 @@ ul {
 /* FAQ */
 
 .faq {
-    padding: 7rem 0;
+    padding: 4.5rem 0;
     background: var(--white-soft);
 }
 
@@ -1594,9 +1623,9 @@ ul {
         gap: 3.5rem;
     }
 
-    .contacto__inner {
+    .contacto__grid {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 2rem;
     }
 
     .footer__grid {
@@ -1672,7 +1701,7 @@ ul {
     .diferencial,
     .faq,
     .contacto {
-        padding: 5rem 0;
+        padding: 3rem 0;
     }
 
     .services-grid {
@@ -1720,7 +1749,7 @@ ul {
     }
 
     .proceso {
-        background-image: url('images/fondocelu.png') !important;
+        background-image: url('images/fondopropuestacelu.png') !important;
     }
 }
 
